@@ -1,0 +1,231 @@
+.partners
+	margin-bottom: 50px
+	.partners-container
+		box-sizing: border-box
+		padding: 30px 60px
+		background: #fff
+		+box-shadow(0px 0px 30px 0px rgba(42,51,80,0.1))
+	.partners-container-l
+		float: left
+		width: 890/1780*100%
+		min-width: 650px
+		// width: calc(890px - 40%)
+		// width: 890px
+	.partners-container-l-img
+		margin-top: 15px
+	.partners-container-r
+		float: right
+		width: 38%
+		// width: calc(100% - 770px)
+		text-align: right
+		// +breakpoint(1500px)
+			// width: 50%
+		h2
+			color: #040404
+			font-weight: 500
+			display: block
+			font-size: 48px
+			line-height: 54px
+			text-transform: uppercase
+			letter-spacing: 0.075em
+			margin-top: 40px
+			margin-bottom: 37px
+			padding-right: 70px
+			box-sizing: border-box
+			// text-align: left
+			+breakpoint(1620px)
+				font-size: 38px
+				line-height: 44px
+				padding-right: 0
+			+breakpoint(1500px)
+				font-size: 29px
+				line-height: 30px
+		&>p 
+			font-size: 36px
+			line-height: 40px
+			color: #0344c5
+			display: block
+			font-weight: 300
+			text-align: right
+			padding-right: 70px
+			box-sizing: border-box
+			&>strong
+				display: block
+				font-weight: 500
+			+breakpoint(1620px)
+				font-size: 28px
+				line-height: 36px
+				padding-right: 0
+	.partners-container-r-item
+		padding: 40px 45px
+		box-sizing: border-box
+		background: #f1f1f1
+		// text-align: right
+		// max-width: 570px
+		// width: 100%	
+		width: 90%
+		font-size: 0
+		line-height: 0
+		margin-top: 18%
+		display: inline-block
+		// +breakpoint(1620px)
+		+breakpoint(1500px)
+			padding: 20px 25px
+		&>div
+			margin-bottom: 40px
+			&:last-child
+				margin-bottom: 0
+		p 
+			line-height: 28px
+			font-size: 24px
+			color: #040404
+			display: block
+			font-weight: 300
+			// padding-right: 150px
+			position: relative
+			box-sizing: border-box
+			// padding-left: 64px
+			// padding: 12px 150px 12px 64px
+			// max-width: 310px
+			// width: 100%
+			width: 65%
+			display: inline-block
+			vertical-align: middle
+			&>strong
+				font-weight: 600
+			+breakpoint(1620px)
+				font-size: 18px
+				line-height: 24px
+		.partners-container-r-item-img
+			// position: absolute
+			// right: 0
+			// top: 5px
+			display: inline-block
+			vertical-align: middle
+			// max-width: 155px
+			// width: 100%
+			width: 30%
+			margin-left: 5%
+	.partners-container-l-r
+		+pie-clearfix
+	.partners-slider
+		border-top: 1px solid #858585
+		padding: 0 155px
+		margin-top: 45px
+		box-sizing: border-box
+		margin-bottom: 50px
+		position: relative
+		h3
+			font-size: 36px
+			font-weight: 500
+			line-height: 40px
+			color: #292929
+			display: block
+			margin-top: 70px
+			margin-bottom: 40px
+		.partners-slider-text
+			+box-shadow(0px 5px 24px -4px rgba(77,89,130,0.4))
+			padding: 10px 20px
+			box-sizing: border-box
+		.date
+			font-size: 13px
+			line-height: 22px
+			color: #717c8e
+			letter-spacing: 0.4px
+			display: block
+			&:before
+				+font-icon("calendar")
+				font-size: 13px
+				color: #717c8e
+				display: inline-block
+				margin-right: 10px
+		.title
+			font-size: 16px
+			line-height: 20px
+			color: #2468ca
+			// font-weight: bold
+			display: block
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+			text-transform: uppercase
+			margin-top: 7px
+			margin-bottom: 10px
+		.text
+			font-size: 13px
+			line-height: 16px
+			color: #010101
+			display: block
+			padding-bottom: 10px
+			min-height: 60px
+			overflow: hidden
+		.partners-slider-img
+			height: 260px
+			position: relative
+			font-size: 0
+			text-align: center
+			&:hover
+				a 
+					+opacity(1)
+			&>img 
+				width: 100%
+				height: 100%
+				object-fit: cover
+			a
+				position: absolute
+				top: 0
+				bottom: 0
+				right: 0
+				left: 0px
+				background: rgba(#fff, 0.31)
+				height: 100%
+				+opacity(0)
+				width: 100%
+				&:after
+					content: ""
+					display: inline-block
+					vertical-align: middle
+					height: 100%
+					width: 0
+				img 
+					display: inline-block
+					vertical-align: middle
+		.swiper-slide
+			margin-bottom: 20px
+		.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets
+			bottom: auto
+			top: 83px
+			
+		.swiper-pagination-bullet
+			width: 16px
+			height: 16px
+			+box-shadow(inset 3px 3px 5px 0px rgba(0,0,0,0.75))
+			border: 1px solid transparent
+			background: #fff
+		.swiper-pagination-bullet-active
+			+box-shadow(inset 3px 3px 5px 0px rgba(0,0,0,0))
+			background: #1352e0
+			width: 16px
+			height: 16px
+			border: 1px solid #c4c7cc
+		.swiper-button-prev, .swiper-container-rtl .swiper-button-next
+			background-image: url("../img/arrow-l.png")
+			background-size: 100%
+			left: 50px
+		.swiper-button-next, .swiper-container-rtl .swiper-button-prev
+			background-image: url("../img/arrow-r.png")
+			background-size: 100%
+			right: 50px
+		.swiper-button-prev, .swiper-button-next
+			width: 54px
+			height: 93px
+
+
+
+
+
+
+
+
+
+

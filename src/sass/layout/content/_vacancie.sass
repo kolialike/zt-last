@@ -1,0 +1,201 @@
+.vacancie
+	margin-bottom: 50px
+	.vacancie-container
+		+pie-clearfix
+		position: relative
+		background: #fff
+		+box-shadow(0px 0px 30px 0px rgba(42,51,80,0.1))
+		&:after
+			content: ""
+			bottom: 0
+			left: 0
+			right: 0
+			width: 100%
+			height: 60px
+			background: #fff
+			z-index: 1
+			border-top: 1px solid #dedede
+	.vacancie-container-l
+		float: left
+		width: 1110/1780*100%
+		padding: 40px 4.2% 60px 
+		box-sizing: border-box
+		height: 1050px
+		overflow: hidden
+		overflow-y: auto
+		&::-webkit-scrollbar
+			width: 10px
+		&::-webkit-scrollbar-track
+			background: rgba(#e5eef8, 0.5)
+			margin: 5px
+		&::-webkit-scrollbar-thumb	
+			+border-radius(10px)
+			background: rgba(#356ec3, 0.85) 
+			-webkit-box-shadow: 0 0 6px rgba(#e5eef8,0.5)
+		&::-webkit-scrollbar-thumb:hover
+			background: rgba(#356ec3, 1)
+.vacancie-container-l-item
+	box-sizing: border-box
+	padding: 35px 50px
+	border: 1px solid #e1e1e1
+	+border-radius(8px)
+	margin-bottom: 25px
+	+box-shadow(0px 0px 5px 0px rgba(225,225,225,0.71))
+	position: relative
+	.title
+		font-size: 24px
+		color: #2770da
+		letter-spacing: 0.025em
+		margin-bottom: 15px
+	.price
+		color: #6b7584
+		font-weight: 300
+	.type-of-time
+		color: #454545
+		font-size: 16px
+		line-height: 16px
+		display: block
+		margin-bottom: 10px
+		span 
+			color: #1c519e
+	h5
+		color: #1c519e
+		font-size: 16px
+		line-height: 16px
+		display: block
+		margin-bottom: 10px
+	ul 
+		list-style: disc none inside
+		list-style-image: url(../img/disk.png)
+		margin-bottom: 18px
+	li 
+		color: #000000
+		font-size: 14px
+		line-height: 16px
+		letter-spacing: 0.05em
+	.vacancie-container-l-item-buttoms
+		// +transition(0.5s)
+		+pie-clearfix
+		a 
+			font-size: 16px
+			color: #000000
+			line-height: 16px
+			+border-radius(3px)
+			padding: 10px 12px 9px
+		.more
+			float: left
+			background: #e2e8f0
+			&:hover
+				background: #d5deea
+			&:before
+				content: ""
+				width: 0
+				height: 0
+				border-left: 4px solid transparent
+				border-right: 4px solid transparent
+				border-top: 5px solid #000000
+				display: inline-block
+				margin-right: 8px
+				vertical-align: middle
+		.request
+			float: right
+			background: #fc0
+			+box-shadow(0px 0px 8px 0px rgba(39,112,218,0.2))
+			&:hover
+				background: #cba407
+			img 
+				margin-right: 8px
+	.vacancie-container-l-item-text
+		font-size: 14px
+		line-height: 16px
+		letter-spacing: 0.025em
+		+opacity(0)
+		max-height: 0
+		overflow: hidden
+		+transition(0.2s)
+
+		p 
+			margin-bottom: 25px
+			&:last-child
+				margin-bottom: 0
+		span 
+			color: #1c519e
+.vacancie-container-r
+	float: right
+	padding: 40px 4.2% 60px 
+	box-sizing: border-box
+	width: 670/1780*100%
+	+breakpoint(1500px)
+		padding: 40px 3.5% 60px 
+	h4 
+		line-height: 24px
+		display: block
+		font-size: 24px
+		color: #364253
+		margin-bottom: 10px
+	.ensure
+		padding-left: 45px
+		box-sizing: border-box
+		background: image-url("crest.png") no-repeat left center
+	.choise
+		font-size: 16px
+		line-height: 16px
+		color: #364253
+		display: block
+		padding-left: 8%
+		margin-bottom: 45px
+		margin-top: 20px
+		img 
+			margin-right: 8px
+			vertical-align: middle
+		a 
+			color: #2770da
+			background: #dfeaf9
+			+border-radius(5px)
+			padding: 10px 10px 9px
+			display: inline-block
+			margin-left: 10px
+			&:hover
+				background: #bed4f2
+	.text 
+		font-size: 14px
+		line-height: 18px
+		color: #364253
+		display: block
+		margin-bottom: 20px
+		width: 250px
+		padding-left: 8%
+		a
+			text-decoration: underline
+			color: #2770da
+	.text-last
+		margin-bottom: 45px
+	ul 
+		margin-top: 25px
+		margin-bottom: 30px
+	li 
+		font-size: 16px
+		line-height: 18px
+		color: #364253
+		margin-bottom: 3px
+		padding-left: 8%
+.vacancie-container-l-item-text-open
+	.vacancie-container-l-item-buttoms
+		// position: absolute
+		// bottom: 40px
+		// left: 0px
+		// box-sizing: border-box
+		// right: 0px
+		// padding: 0 50px
+		// width: 100%
+		.more
+			&:before
+				border-bottom: 5px solid #000000
+				border-top: 5px solid transparent
+				vertical-align: top
+	.vacancie-container-l-item-text
+		padding-top: 5px
+		+opacity(1)
+		+transition(0.3s)
+		max-height: 500px
+		padding-bottom: 30px

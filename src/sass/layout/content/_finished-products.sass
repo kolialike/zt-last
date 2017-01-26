@@ -1,0 +1,115 @@
+// finished-products
+// .finished-products
+	
+.finished-products-item
+	margin: 0 -130px
+	padding: 0 130px
+	background: #f2f7ff
+	+pie-clearfix
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	.left
+		width: 30%
+		img
+			display: block
+			
+	.right
+		width: 55%
+		padding: 30px 0
+		+box-sizing(border-box)
+		p 
+			padding-bottom: 0
+			font-size: 24px
+			line-height: 40px
+			text-indent: 0
+			+breakpoint(1750px)
+				font-size: 20px
+				line-height: 30px
+		h5
+			margin-bottom: 40px
+			display: block
+			font-weight: 400
+			color: #192b46
+			font-size: 24px
+			line-height: 1
+			+breakpoint(1750px)
+				margin-bottom: 20px
+				font-size: 22px
+
+
+
+.finished-products-title
+	font-size: 36px
+	display: block
+	color: #192b46
+	line-height: 40px
+	margin-bottom: 45px
+	margin-top: 20px
+	font-weight: 300
+.finished-products-container
+	color: #192b46
+	p
+		font-size: 27px
+		line-height: 40px
+		display: block
+		margin-bottom: 37px
+		position: relative
+		padding-left: 25px
+		text-indent: 0
+		padding-bottom: 0
+		font-weight: 400
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			top: 17px
+			+border-radius(100%)
+			background: #192b46
+			width: 8px
+			height: 8px
+		
+	strong
+		font-weight: bold
+		
+.finished-products-gallery
+	padding: 200px 0 80px
+	+pie-clearfix
+	+breakpoint(1600px)
+		padding-top: 100px
+	h5
+		text-transform: uppercase
+		font-size: 36px
+		color: #192b46
+		display: block
+	span
+		font-size: 24px
+		line-height: 40px
+		color: #192b46
+		font-style: italic
+		display: block
+		text-align: center
+		margin: 20px auto 0px
+		max-width: 80%
+		+breakpoint(1600px)
+			font-size: 20px
+			line-height: 28px
+		
+		
+.finished-products-gallery-img
+	float: left
+	margin-top: 160px
+	width: 45%
+	img
+		width: 100%
+.finished-products-gallery-img-1
+	float: right
+	margin-top: -36px
+	width: 45%
+	img
+		width: 100%
+	
+// finished-products
+
+

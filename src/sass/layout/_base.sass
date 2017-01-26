@@ -1,0 +1,48 @@
+input, select, textarea
+  -moz-appearance: none
+  -ms-appearance: none
+  -webkit-appearance: none
+  appearance: none
+
+body
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+  -webkit-text-size-adjust: 100%
+  -webkit-font-smoothing: antialiased
+  letter-spacing: 0.4px
+  min-height: 100%
+  height: 100% 
+img     
+  margin: auto 
+  max-width: 100%
+a 
+  text-decoration: none
+  +transition(0.3s)
+a[href^=tel]
+  // text-decoration: none
+  color: #325a6e
+* 
+  padding: 0
+  margin: 0 auto
+
+html
+  min-height: 100%
+  position: relative
+  // height: 100% 
+
+.wrapper
+  position: relative
+  max-width: 1820px
+  min-width: 1220px
+  margin: auto
+  padding: 0 20px
+  +box-sizing(border-box)
+  +pie-clearfix
+
+.global-wrapper
+  width: 100%
+  min-width: 1220px
+  height: 100%
+  +box-sizing(border-box)
+  padding-bottom: 79px
+  

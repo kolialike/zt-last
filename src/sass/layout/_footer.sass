@@ -1,0 +1,79 @@
+#footer
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	width: 100%
+.footer-top
+	background: #356ec3
+	.search 
+		float: left
+		width: 365px
+		margin: 14px 0px 10px
+	input[type="search"]
+		height: 40px
+		background: rgba(#477fd3, 0.6)
+		color: #8eb9f8
+		font-size: 14px
+		letter-spacing: 0.4px
+		line-height: 16px
+		padding: 10px 35px 6px 20px
+		&:focus
+			background: rgba(#477fd3, 0.8)
+		+placeholder
+			font-size: 14px
+			color: #8eb9f8
+			letter-spacing: 0.4px
+			line-height: 16px
+	.search-submit
+		height: 40px
+		width: 35px
+		&:before
+			color: #8eb9f8
+			top: 9px
+		input[type="submit"]
+			width: 35px
+	.language
+		margin-top: 14px
+		a 
+			background: #3d7ddc
+
+.footer-bottom
+	padding: 20px 0 15px
+	background: #2261ba
+	+pie-clearfix
+.footer-bottom-l
+	font-size: 14px
+	line-height: 20px
+	color: #fff
+	float: left
+	width: 626px
+	padding-left: 80px
+	position: relative
+	img
+		position: absolute
+		left: 20px
+		top: 50%
+		margin-top: -18px
+	// &:before
+	// 	+font-icon("exclamation")
+	// 	color: #faae00
+	// 	position: absolute
+	// 	left: 0
+	// 	font-size: 45px
+.footer-bottom-r
+	float: right
+	width: 445px
+	font-size: 15px
+	color: #fff
+	line-height: 22px
+	// margin-top: 7px
+	font-weight: 300
+	span 
+		display: block
+		font-size: 12px
+	a 
+		color: #ffc000
+		text-decoration: underline
+		&:hover
+			text-decoration: none

@@ -1,0 +1,103 @@
+// mlf
+.mlf
+	// margin-bottom: 50px
+	h3
+		position: relative
+		a 
+			position: absolute
+			left: 3px
+			top: 45px
+			font-size: 27px
+			text-transform: none
+			
+			color: #086bff
+			&:before
+				+transform(rotate(-45deg))
+				content: ""
+				border: 2px solid
+				border-color: #086bff transparent transparent #086bff
+				display: inline-block
+				width: 17px
+				height: 17px
+				vertical-align: middle
+			&:hover
+				color: #1053b1
+.mlf-container
+	padding: 0 130px 30px
+	+box-sizing(border-box)
+	background: #fff
+	p 
+		text-indent: 1.5em
+		font-size: 24px
+		line-height: 32px
+		font-weight: 300
+		display: block
+		padding-bottom: 23px
+		+breakpoint(1500px)
+			font-size: 20px
+	h4
+		font-weight: bold
+		font-size: 26px
+		line-height: 1
+		margin-bottom: 30px
+	li
+		text-indent: 1.5em
+		font-size: 24px
+		line-height: 32px
+		font-weight: 300
+		+breakpoint(1500px)
+			font-size: 20px
+	ul 
+		margin-bottom: 23px
+.sort-machine
+	background: #f2f7ff
+	margin: 300px -130px
+	padding: 0 130px
+.sort-machine-item
+	+pie-clearfix
+	color: #192b46
+	position: relative
+	&:nth-child(2)
+		.sort-machine-item-img
+			right: 0
+			left: auto
+			max-height: 800px
+		.sort-machine-item-text
+			float: left
+			margin-top: 25%
+			margin-bottom: 7%
+			+breakpoint(1440px)
+				margin-top: 13%
+				margin-bottom: 6%
+.sort-machine-item-img
+	// float: left
+	width: 45%
+	// margin-top: -150px
+	position: absolute
+	left: 0
+	top: -150px
+.sort-machine-item-text
+	float: right
+	width: 45%
+	margin-top: 10%
+	margin-bottom: 15%
+	+breakpoint(1440px)
+		margin-bottom: 22%
+	h5
+		font-size: 22px
+		display: block
+		margin-bottom: 50px
+	p
+		font-size: 20px
+		line-height: 24px
+		text-indent: 0
+.mlf-container-img
+	display: block
+.mlf-container-img-title
+	font-size: 27px
+	color: #192b46
+	padding: 35px 0 50px
+	display: block
+	text-align: center
+	
+// mlf
